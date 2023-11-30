@@ -1,0 +1,85 @@
+::selection {
+    background-color: #f79dff;
+    color: rgba(0, 0, 0, 0.915);
+}
+
+body {
+    background: url('thenealersWHITE.png');
+    transition: background 0.75s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: black;
+    background-position: center;
+    margin: 0; /* Remove default body margin */
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.login, .sign, .who, .logout{
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.login {
+    left: 225px; 
+}
+
+.sign {
+    left: 325px; 
+}   
+
+.who {
+    left: 100px;
+}
+
+.logout{
+   right: 100px;
+}
+
+.login a, .sign a, .who a, .logout a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.login a:hover, .sign a:hover, .who a:hover, .logout a:hover {
+    color: #f79dff;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px pink,
+        0 0 10px pink,
+        0 0 5px pink,
+        0 0 5px pink,
+        0 0 5px pink;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .login, .sign, .who, .logout {
+        font-size: 16px; 
+    }
+
+    .login {
+        left: 10px; 
+    }
+
+    .sign {
+        left: 60px;
+    }
+
+    .who {
+        left: 120px;
+    }
+}

@@ -1,0 +1,172 @@
+::selection {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.915);
+}
+
+body {
+    background: url('blackdesign.jpg');
+    transition: background 0.75s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.Top-Text {
+    margin: 2.5px auto 0; 
+    width: 640px; 
+    padding: 30px; 
+    font-family: 'Lexend Deca', sans-serif; 
+    color: #2E475D;    
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.Top-Text a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.Top-Text a:hover{
+    color: #1e191f;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgb(24, 21, 21),
+    0 0 20px rgb(214, 212, 212),
+    0 0 10px rgb(218, 216, 216),
+    0 0 10px rgb(187, 184, 186),
+    0 0 10px rgb(252, 244, 245);
+}
+
+#card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 6vw;
+    max-width: 1000px;
+    width: auto;
+    position: relative;
+    top: 370px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center; 
+}
+
+ .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    height: auto;
+    width: 12vw;
+    position: relative;
+    z-index: 9998;
+    margin-bottom: 20px;
+    border: 2px solid #1a1717;
+    transition: border-color 0.5s;
+
+ }
+
+.card:hover img{
+    filter: grayscale(0);
+}
+
+ .card:hover::before, .card:hover > .card-border {
+    opacity: 1;
+    
+ }
+
+ .card::before, .card > .card-border{
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 500ms; 
+    pointer-events: none;
+ }
+
+ .card::before{
+    background: radial-gradient(
+        10vw circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.293), 
+        transparent
+    );
+    z-index: 3;
+ }
+
+ .card > .card-border{
+    
+    background: radial-gradient(
+        5vw circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.419), 
+        transparent
+    );
+    z-index: 1;
+ }
+
+ .card > .card-content {
+    background-color: var(--card-color);
+    border-radius: inherit;
+    height: auto;
+    margin: 1px;
+    position: relative;
+    width: auto;
+    z-index: 2;
+ }
+
+ .card a {
+    text-decoration: none; 
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.BtmTxt {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #f79aff;
+    font-size: 3vw;
+    position: fixed; 
+    bottom: -2vw; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.card-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    #card {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}

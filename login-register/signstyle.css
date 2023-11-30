@@ -1,0 +1,206 @@
+::selection {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.915);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    background: url('blacksketik.jpg');
+    transition: background 0.75s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    display: flex;
+    
+}
+
+.wrapper {
+    width: 750px;
+    background: rgba(220, 220, 220, 0.1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    color: pink;
+    padding: 40px 35px 55px;
+    text-align: center; 
+
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center !important;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.wrapper .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box .input-field {
+
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin: 13px 0;
+}
+
+.input-box .input-field input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    font-size: 16px;
+    color: rgb(255, 234, 234);
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px;
+    transition: width 0.3s ease, padding 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+    transition: width 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.input-box .input-field input:hover {
+    width: calc(110% - 10px);
+    padding: 20px 15px 20px 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1); 
+}
+
+.input-box .input-field input::placeholder {
+    color: rgb(163, 157, 157)
+}
+
+.input-box .input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper label {
+    display: inline-block;
+    font-size: 14.5px;
+    margin: 10px 0 23px;
+}
+
+.wrapper label input {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.wrapper .button {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.wrapper .button:hover {
+    width: calc(100% + 20px); 
+    padding: 15px 15px 15px 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.wrapper .button:active {
+    transform: scale(0.98);
+}
+
+.login a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s;
+    
+}
+
+.login a:hover {
+    color: #fdfdfd !important;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgb(255, 212, 219),
+    0 0 20px rgb(214, 212, 212),
+    0 0 10px rgb(218, 216, 216),
+    0 0 10px rgb(187, 184, 186),
+    0 0 10px rgb(252, 244, 245);
+    text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
+
+.wrapper .input-box2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box2 .input-field2 {
+
+    position: relative;
+    width: 46%;
+    margin: 13px 0;
+}
+
+.input-box2 .input-field2 input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    font-size: 16px;
+    color: rgb(255, 234, 234);
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px;
+    transition: width 0.3s ease, padding 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+    transition: width 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.input-box2 .input-field2 input:hover {
+    width: calc(110% - 10px);
+    padding: 20px 15px 20px 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1); 
+}
+
+.input-box2 .input-field2 input::placeholder {
+    color: rgb(163, 157, 157)
+}
+
+.input-box2 .input-field2 i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+
+
+
+

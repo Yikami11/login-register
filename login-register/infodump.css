@@ -1,0 +1,119 @@
+::selection {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.915);
+}
+
+body {
+    background: url('blackdesign.jpg');
+    transition: background 0.75s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.person-info {
+    text-align: right;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: 40;
+    max-width: 400px;
+    text-transform: capitalize;
+    color: rgb(243, 233, 245);
+    font-size: 1.9vw;
+    line-height: 1.5; 
+    padding: 20px;
+    margin: 20px; 
+}
+
+
+.personbox {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+
+.wrapper {
+    width: 750px;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    color: pink;
+    padding: 40px 35px 55px;
+    text-align: center; 
+}
+
+.wrapper .personbox {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Top-Text {
+    margin: 2.5px auto 0; 
+    width: 640px; 
+    padding: 30px; 
+    font-family: 'Lexend Deca', sans-serif; 
+    color: #2E475D;    
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Top-Text a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.Top-Text a:hover{
+    color: #1e191f;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgb(24, 21, 21),
+    0 0 20px rgb(214, 212, 212),
+    0 0 10px rgb(218, 216, 216),
+    0 0 10px rgb(187, 184, 186),
+    0 0 10px rgb(252, 244, 245);
+}
+
+.BtmTxt {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #f7ebf8;
+    font-size: 40px;
+    position: fixed; 
+    bottom: 10vw; 
+    left: 10%; 
+    transform: translateX(-50%); 
+    position:absolute;
+}
+
+.links {
+
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: 30px;
+    
+
+}
+
+.links:hover{
+    color: #fdfdfd !important;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgb(255, 212, 219),
+    0 0 20px rgb(214, 212, 212),
+    0 0 10px rgb(218, 216, 216),
+    0 0 10px rgb(187, 184, 186),
+    0 0 10px rgb(252, 244, 245);
+    text-decoration: none !important;
+
+}
